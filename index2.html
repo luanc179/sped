@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SPED</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="cabecalho">
+        <img src="img/brasaooficialpretoebranco.png.png" alt="brasao">
+        <p id="cabe">MINISTÉRIO DA DEFESA<br>
+            EXÉRCITO BRASILEIRO<br>
+            17º BATALHÃO LOGÍSTICO LEVE DE MONTANHA<br>
+            (4ª Cia Adm/1915)<br>
+            BATALHÃO MARIANO PROCÓPIO<br>
+            </p>
+        </div>
+        <form>
+            <select name="remetentes" id="selec">
+            <option value="do">Do:</option>
+            <option value="da">Da:</option>
+        </select>
+            <input type="text" id="remetente" name="remetente">
+            <br>
+            <select name="destinatarios" id="selec">
+                <option value="aoSr">Ao Sr:</option>
+                <option value="aSra">À Sra:</option>
+            </select>
+            <input type="text" id="destinatario" name="destinatario">
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto">
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+            
+            <center>
+            <input class="texto" name="nomeComp" autocapitalize="characters" placeholder="Nome Completo - Posto/Graduação"></input><br>
+            <input class="texto" name="fucao" autocapitalize="characters" placeholder="Função"></input>
+            </center>
+        
+        
+        </form>
+
+
+        <p id="frodape">"1822-2022 – BICENTENÁRIO DA INDEPENDÊNCIA DO BRASIL<br>
+            SOBERANIA E LIBERDADE"</p>
+
+    </div>
+    <button onclick="window.print('.page')" class="imprimir">Imprimir</button>
+</body>
+<script src="script/script.js" type="module"></script>
+
+</html>
