@@ -113,8 +113,10 @@ img{
     padding: 0%;
 }
 .texto{
+    
     text-align: center;
     align-items: center;
+    width: 30rem;
 }
 
 #assinatura{
