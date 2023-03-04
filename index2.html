@@ -19,6 +19,18 @@
             BATALHÃO MARIANO PROCÓPIO<br>
             </p>
         </div>
+        <div id="nDiex">
+            <form>
+            <label for="DIEx">DIEx </label>
+            <input class="diex" name="diex" autocapitalize="characters" placeholder="NUMERO"></input>
+            <label type="text" for="Nup">EB: </label>
+            <input type="text" class="nup" name="nup" autocapitalize="characters" placeholder="NUP"></input>
+            <select name="precedencia" id="selecprece">
+                <option value="aoSr">URGENTE</option>
+                <option value="aSra">URGENTÍSSIMO</option>
+            </select>
+        </form>
+        </div>
         <form>
             <select name="remetentes" id="selec">
             <option value="do">Do:</option>
@@ -26,6 +38,7 @@
         </select>
             <input type="text" id="remetente" name="remetente">
             <br>
+            <input class="fucao1" name="fucao1" autocapitalize="characters" placeholder="FUNÇÃO"></input>
             <select name="destinatarios" id="selec">
                 <option value="aoSr">Ao Sr:</option>
                 <option value="aSra">À Sra:</option>
@@ -41,11 +54,12 @@
             <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem"></textarea>
             
+            <div id="assinatura">
             <center>
-            <input class="texto" name="nomeComp" autocapitalize="characters" placeholder="Nome Completo - Posto/Graduação"></input><br>
-            <input class="texto" name="fucao" autocapitalize="characters" placeholder="Função"></input>
+            <input class="texto" name="nomeComp" autocapitalize="characters" placeholder="NOME COMPLETO - POSTO / GRADUAÇÃO"></input><br>
+            <input class="texto" name="fucao" autocapitalize="characters" placeholder="FUNÇÃO"></input>
             </center>
-        
+        </div>
         
         </form>
 
